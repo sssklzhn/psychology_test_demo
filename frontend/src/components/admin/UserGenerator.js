@@ -1,5 +1,5 @@
 import { createElement, clearElement, downloadCSV } from '../../utils/helpers.js';
-import { api } from '../../services/api.js';
+import { api } from '../services/api';
 import { showNotification } from '../../utils/helpers.js';
 
 export class UserGenerator {

@@ -368,7 +368,7 @@
 // };
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { api } from './../api'; // Импортируем централизованный API
+import { api } from '../services/api';
 
 export const TestPage = ({ user, onLogout }) => {
   const navigate = useNavigate();

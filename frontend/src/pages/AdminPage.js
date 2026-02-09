@@ -612,7 +612,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ResultTable } from './../components/admin/ResultsTable'; 
-import { api } from './../../api'; // Импортируем централизованный API
+import { api } from '../services/api';
 
 export const AdminPage = ({ onLogout }) => {
   const navigate = useNavigate();
