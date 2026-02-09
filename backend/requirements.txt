@@ -5,7 +5,7 @@ python-multipart==0.0.6
 python-dotenv==1.0.0
 firebase-admin==6.2.0
 google-cloud-firestore==2.13.0
-pandas==2.1.4
+pandas==2.2.0  # Явно указываем совместимую версию
 openpyxl==3.1.2
 reportlab==4.0.8
 pydantic==2.5.0
