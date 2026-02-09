@@ -41,9 +41,22 @@ app = FastAPI(
 )
 
 # Настройка CORS
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
+# Настройка CORS - ОБНОВИТЕ В НАЧАЛЕ main.py:
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=[
+        "http://localhost:3000",           # локальная разработка
+        "http://127.0.0.1:3000",           # локальная разработка
+        "https://psychology-test-demo-usfg.vercel.app",  # ваш фронтенд на Vercel
+        "https://psychology-test-demo.vercel.app",       # если есть другой домен
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
