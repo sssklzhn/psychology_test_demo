@@ -482,30 +482,4 @@ const styles = {
     opacity: '0.8'
   }
 };
-
-// Создаем и добавляем стили для анимаций
-useEffect(() => {
-  const styleSheet = document.createElement('style');
-  styleSheet.textContent = `
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    
-    .card {
-      animation: fadeIn 0.3s ease-out;
-    }
-  `;
-  document.head.appendChild(styleSheet);
-  
-  return () => {
-    document.head.removeChild(styleSheet);
-  };
-}, []);
-
 export default App;
