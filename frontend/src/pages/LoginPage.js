@@ -117,7 +117,7 @@
 // };
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { authService } from './../services/authService'; // Импортируем сервис аутентификации
+import { authService } from './../services/auth';
 
 export const LoginPage = ({ onLogin }) => {
   const navigate = useNavigate();

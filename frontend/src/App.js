@@ -241,7 +241,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { LoginPage } from './pages/LoginPage';
 import { AdminPage } from './pages/AdminPage';
 import { TestPage } from './pages/TestPage';
-import { authService } from './services/authService';
+import { authService } from './services/auth';
 import './App.css';
 
 function App() {
