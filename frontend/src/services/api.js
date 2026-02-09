@@ -1,5 +1,6 @@
 // Базовый URL API
-const API_URL = 'http://localhost:8000/api';
+const API_URL = process.env.REACT_APP_API_URL;
+
 
 // Получение токена из localStorage
 const getToken = () => {// Получение токена из localStorage
